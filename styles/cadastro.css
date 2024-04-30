@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* fontes */
+
+/* corpo */
+@font-face {
+    font-family:Main;
+    src: url(Thasadith/Thasadith-Regular.ttf);
+}
+
+/* títulos */
+@font-face {
+    font-family: Title;
+    src: url(Poller_One/PollerOne-Regular.ttf);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imgs/library.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #3c867e;
+}
+
+#createAccount {
+    background-color: rgb(255, 197, 173);
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* botão */
+#btnCadastro{
+    padding: 10px 50px;
+    background-color: rgb(241, 113, 58);
+    color: white;
+    border: none;
+    border: 2px solid #ffa473 ;
+    border-radius: 10px;
+    margin: 20px ;
+    font-size: 16px;
+}
+
+#btnCadastro:hover {
+    background-color: #ffa473;
+    border: 2px solid rgb(241, 113, 58); ;
+    cursor: pointer;
+}
+
+/* inputs */
+#nome, #dtNasc, #cpf, #telefone, #email, #senha {
+    padding: 0px 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* titulo */
+h2 {
+    padding: 20px;
+}

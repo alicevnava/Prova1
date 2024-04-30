@@ -1,0 +1,61 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* fontes */
+@font-face {
+    font-family:Main;
+    src: url(Thasadith/Thasadith-Regular.ttf);
+}
+
+/* títulos */
+@font-face {
+    font-family: Title;
+    src: url(Poller_One/PollerOne-Regular.ttf);
+}
+
+header {
+    background-color: red;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto; /* Mantém a proporção do logo */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px; /* Reduzindo a margem entre os itens do menu */
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.login button {
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

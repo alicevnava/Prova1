@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* fontes */
+@font-face {
+    font-family: "Main";
+    src: url(Thasadith/Thasadith-Regular.ttf);
+}
+
+/* títulos */
+@font-face {
+    font-family: "Title";
+    src: url(Poller_One/PollerOne-Regular.ttf);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imgs/livrosempilhados.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#login {
+    width: 500px;
+    height: 300px;
+    background-color: #c1dff0ff;
+    border-radius: 10px;
+    text-align: center;
+    color: #d66f00;
+}
+/* botão de login */
+#btnLogin {
+    padding: 10px 50px;
+    background-color: #29335cff;
+    color: antiquewhite;
+    border: none;
+    border: 2px solid rgb(124, 137, 185) ;
+    border-radius: 10px;
+    margin: 20px ;
+    font-size: 16px;
+}
+
+#btnLogin:hover {
+    background-color: rgb(124, 137, 185) ;
+    border: 2px solid #29335cff ;
+    cursor: pointer;
+}
+
+/* campo email e senha */
+#email, #senha {
+    padding: 0px 50px;
+    text-align: center;
+    margin: 10px;
+}
+label {
+    font-family: "Main";
+    font-size: 16px;
+}
+
+/* entrar */
+h2{
+    font-family: "Title";
+    padding: 20px;
+}
