@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry's BookStore</title>
+    <link rel="stylesheet" href="styles/principal.css">
+    <!-- ícone na aba -->
+    <link rel="shortcut icon" href="imgs/cereja (1).png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="imgs/cereja (1).png" alt="logo" id="imgLogo">
+                    </a>
+                 </li>    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="btnWelcome" onclick="btnWelcomeTroca()">Seja bem vindo</button>
+        <div id="optionsBox" style="display: none;">
+            <div id="options">
+                <a href="login.html">Entrar</a>
+                <br>
+                <a href="cadastro.html">Cadastrar</a>
+            </div>
+    </header>
+    <main>
+        <div id="banner">
+            <img src="imgs/cherry.png" alt="beagle" id="imgBanner"/>
+            <div id="welcome">
+                <h2>Sejam bem-vindos!</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, iste nemo quos eum pariatur nihil velit assumenda, perspiciatis, ullam illo quo nulla dolorum cumque asperiores accusamus officia alias ex. Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui optio hic ipsum, neque est a ratione! Quos, asperiores debitis magnam provident consequatur corporis unde voluptate! Inventore possimus unde quo optio.</p>
+            </div>
+        </div>
+        
+        <div id="clube">
+            <h2>Tantas Folhas</h2>
+            <div id="infoClube">
+                <div id="data">
+                    <h4>Próximo encontro</h4>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=7d3e9f25af4d392e56a464b8fe71082fafcde9c25c47511f2cc3d6bd6c2da0bc%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+                 <div id="mapa">
+                    <h4>Local</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122838.08088806798!2d-48.10686236274319!3d-15.820290238993339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2fde38d3a66b%3A0x1dfc8dc6ee4143a1!2sVitorino%20Pizzaria%20e%20Ristorante!5e0!3m2!1spt-BR!2sbr!4v1714591295651!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="livro">
+                    <h4>Livros do Mês</h4>
+                    <a href="https://www.amazon.com.br/biblioteca-dos-sonhos-secretos-hist%C3%B3ria-ebook/dp/B0CJCJ7QQ6" target="blank">
+                    <img src="imgs/livromes.jpg" alt="livro A biblioteca dos sonhos secretos: Uma história sobre a magia dos livros e seu poder de conectar pessoas">
+                    </a>
+                </div> 
+            </div>    
+            <form action="#" method="get" id="newsletter">
+                <label for="email">Assine a newsletter:</label>
+                <input type="email" id="email" placeholder="usuario@email.com" id="txtEmail" required/> 
+                <br>
+                <button type="submit" id="btnSign">Assinar!</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        Todos os direitos reservados a Cherry's Coorporate
+    </footer>
+<!-- botão para entrar ou cadastrar no site -->
+    <script>
+        function btnWelcomeTroca() {
+            if (optionsBox.style.display == "none"){
+            optionsBox.style.display = "block";
+            } else {
+        optionsBox.style.display = "none";
+        }
+    }
+        </script>
+</body>
+</html>

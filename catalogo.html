@@ -6,31 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cherry's BookStore</title>
     <link rel="stylesheet" href="styles/catalogo.css">
-
     <!-- ícone na aba -->
     <link rel="shortcut icon" href="imgs/cereja (1).png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="imgs/cereja (1).png" alt="Logo">
-            </div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Catálogo</a></li>
+        <nav>
+            <ul>
+                <li>
+                    <a href="principal.html">
+                        <img src="imgs/cereja (1).png" alt="logo" id="imgLogo">
+                    </a>
+                 </li>    
+                    <li><a href="principal.html">Home</a></li>
+                    <li><a href="#">Catálogo</a></li>
             </ul>
-            <div class="login">
-                <button>Login</button>
-            </div>
         </nav>
+        <button type="button" id="btnWelcome" onclick="btnWelcomeTroca()">Seja bem vindo</button>
+        <div id="optionsBox" style="display: none;">
+            <div id="options">
+                <a href="login.html">Entrar</a>
+                <br>
+                <a href="cadastro.html">Cadastrar</a>
+            </div>
+        </div>
     </header>
-    <main>
 
-    </main>
+    <main>
+        <h1>Catálogo</h1>
+        <div id="catalogo">
+            <div class="livros">
+                <a href="https://www.amazon.com.br/galinheiro-Amaur%C3%ADcio-Lopes-ebook/dp/B0BC5BL2QP" target="_blank">
+                    <img src="imgs/livro6.jpg" alt="Livro 1" id="livro1">
+                </a>
+            </div>
+            <div class="livros">
+                <a href="https://www.amazon.com.br/sociedade-supersecreta-bruxas-rebeldes-ebook/dp/B0CJRYTZ7X/ref=sr_1_1?crid=3CNIGR4ZCZZC6&dib=eyJ2IjoiMSJ9.bF6CDiauYyYFo1NctUnIftN30-lPRSNMBKT5IXVF_3ex0WxjDz2dj2c2Mc78Tz5GQVxgeAjQ9ANd3KObP4dNctjdjTloAHe_-IEeH57dsro.7i-kuqX0prC3iT6znFAIoI-eWnoqNEm5za4GngqCEVA&dib_tag=se&keywords=a+sociedade+supersecreta+de+bruxas+rebeldes&qid=1714600072&s=digital-text&sprefix=a+socie%2Cdigital-text%2C230&sr=1-1" target="_blank">
+                    <img src="imgs/livro2.jpg" alt="Livro 2" id="livro2">
+                </a>
+                
+            </div>
+            <div class="livros">
+                <a href="https://www.amazon.com.br/Os-sete-maridos-Evelyn-Hugo/dp/8584391509" target="_blank">
+                    <img src="imgs/livro4.jpg" alt="Livro 3" id="livro3">
+                </a>
+            </div>
+        </div>
+        <form action="#" method="get">
+            <label for="livro" id="labelLivro">Indique um livro</label><br>
+            <input type="text" id="livro" name="livro" required placeholder="Nome do Livro"><br><br>
+            <label for="livro" id="labelAutor">Autor</label><br>
+            <input type="text" id="autor" required placeholder="Nome do autor"><br><br>
+            <button type="submit" id="btnIndicacao">Indicar</button>
+        </form>
+      </main>
+
 
     <footer>
-
+        Todos os direitos reservados a Cherry's Coorporate
     </footer>
+<!-- botão para entrar ou cadastrar no site -->
+    <script>
+        function btnWelcomeTroca() {
+            if (optionsBox.style.display == "none"){
+            optionsBox.style.display = "block";
+            } else {
+        optionsBox.style.display = "none";
+        }
+    }
+        </script>
 </body>
 </html>

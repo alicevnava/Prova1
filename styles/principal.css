@@ -1,0 +1,225 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* fontes */
+@font-face {
+    font-family:Main;
+    src: url(Thasadith/Thasadith-Regular.ttf);
+}
+
+/* títulos */
+@font-face {
+    font-family: Title;
+    src: url(Poller_One/PollerOne-Regular.ttf);
+}
+
+:root{
+  --corPrimaria: #cd426a; /*headers, footers */
+  --banner:#fc9bad; /*banner*/
+  --white: #ffff; /*branco */
+  --marfin: #fffff0; /*marfin */
+  --black: #0000; /*preto */
+  --hover:#7c3444 ; /*botões hovered */
+  --btnBorda: #fdc1c8;/*borda de btns */
+  --title: #c3024e; /*titulos */
+  --subtitle: #da236c; /*subtitulos */
+
+}
+
+/* cabeçalho e nav bar */
+header {
+    position: relative; 
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background-color: var(--corPrimaria);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+header a:hover {
+  color: var(--hover);
+}
+header li {
+    display: flex;
+    align-items: center;
+}
+
+header button {
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    background-color: transparent;
+    color: var(--white);
+    padding: 8px;
+    border: none;
+    border: 1px solid var(--btnBorda);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--btnBorda);
+  color: var(--hover);
+}
+
+#imgLogo {
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+}
+/* fim header */
+h2{
+  color: var(--title);
+}
+h4{
+  color:var(--subtitle);
+}
+/* footer */
+footer {
+    background-color: var(--corPrimaria);
+    color: var(--white);
+    width: 100%;
+    height: 20px;
+    text-align: center;
+
+}
+
+/* banner */
+#banner {
+    width: 100%;
+    height: 300px;
+    background-color: var(--banner);
+    margin: 20px 0px;
+}
+
+#imgBanner {
+    height: 300px;
+}
+
+#welcome {
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+#welcome h2 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 10px;
+    padding: 5px;
+   
+}
+
+#welcome p {
+    font-size: 1.1rem;
+    color: var(--white);
+    margin: 0;
+}
+
+/* clube do livro */
+    
+    #clube {
+      text-align: center;
+      margin: 50px;
+    }
+
+    hr {
+      position: relative;
+      top: 10px;
+      border: none;
+      height: 1px;
+      background-color: var(--white);
+    }
+
+    #infoClube {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    #data, #mapa, #livro {
+      flex: 1;
+    }
+
+    #mapa {
+      margin: 0 20px;
+    }
+
+    #livro img {
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px var(--black); 
+    }
+
+    #data iframe {
+      width: 400px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px var(--black); 
+    }
+
+    #mapa iframe {
+      width: 400px;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px var(--black); 
+    }
+
+    #clube h4 {
+      padding: 15px;
+    }
+
+    /* newsletter */
+    #newsletter {
+      padding: 10px;
+      margin: 40px;
+    }
+
+  #btnSign{
+    padding: 10px 15px;
+    border: none;
+    border: 2px solid var(--btnBorda);
+    border-radius: 10px;
+    background-color: var(--corPrimaria);
+    margin: 10px;
+    color: var(--white);
+  }
+
+  #btnSign:hover{
+    background-color: var(--btnBorda);
+    color: var(--hover);
+    border: 2px solid var(--corPrimaria);
+  }
+  
+  #optionsBox {
+    position: absolute;
+    left: 90%;
+    background-color: var(--corPrimaria);
+    border: none;
+    box-shadow: 0px 2px 4px var(--black);
+    padding: 5px;
+    z-index: 100;
+    top: 100%;
+    width: 10%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+}

@@ -15,7 +15,14 @@
     font-family: Title;
     src: url(Poller_One/PollerOne-Regular.ttf);
 }
-
+:root{
+    --corPrimaria: #cd426a; /*headers, footers */
+    --PopUp:#f8a1ad; /*login e cadastro */
+    --btnPopup: #e36576; /*botao do popup*/
+    --bordaBtnPopUp:#b22222; /*borda botao do popup*/
+    --white: #ffff; /*branco */
+    --marfin: #fffff0; /*marfin */
+}
 main {
     height: 100vh;
     display: flex;
@@ -25,13 +32,17 @@ main {
     background-image: url(../imgs/library.jpg);
     background-size: cover;
     background-position: center;
-    color: #3c867e;
+    color: var(--white);
+}
+
+h2{
+    color: var(--marfin);
 }
 
 #createAccount {
-    background-color: rgb(255, 197, 173);
+    background-color: var(--PopUp);
     width: 500px;
-    height: 500px;
+    height: 550px;
     border-radius: 10px;
     text-align: center;
 }
@@ -39,18 +50,18 @@ main {
 /* botão */
 #btnCadastro{
     padding: 10px 50px;
-    background-color: rgb(241, 113, 58);
-    color: white;
+    background-color: var(--btnPopup);
+    color: var(--white);
     border: none;
-    border: 2px solid #ffa473 ;
+    border: 2px solid var(--bordaBtnPopUp) ;
     border-radius: 10px;
     margin: 20px ;
     font-size: 16px;
 }
 
 #btnCadastro:hover {
-    background-color: #ffa473;
-    border: 2px solid rgb(241, 113, 58); ;
+    background-color: var(--bordaBtnPopUp);
+    border: 2px solid var(--btnPopup); ;
     cursor: pointer;
 }
 
@@ -64,4 +75,13 @@ main {
 /* titulo */
 h2 {
     padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover{
+    color: var(--corPrimaria);
 }

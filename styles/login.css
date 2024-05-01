@@ -15,6 +15,15 @@
     src: url(Poller_One/PollerOne-Regular.ttf);
 }
 
+:root{
+    --corPrimaria: #cd426a; /*headers, footers */
+    --PopUp:#f8a1ad; /*login e cadastro */
+    --btnPopup: #e36576; /*botao do popup*/
+    --bordaBtnPopUp:#b22222; /*borda botao do popup*/
+    --white: #ffff; /*branco */
+    --marfin: #fffff0; /*marfin */
+}
+
 main {
     height: 100vh;
     display: flex;
@@ -26,29 +35,32 @@ main {
     background-position: center;
 }
 
+h2{
+    color: var(--marfin);
+}
 #login {
     width: 500px;
-    height: 300px;
-    background-color: #c1dff0ff;
+    height: 330px;
+    background-color: var(--PopUp);
     border-radius: 10px;
     text-align: center;
-    color: #d66f00;
+    color: var(--white);
 }
 /* botão de login */
 #btnLogin {
     padding: 10px 50px;
-    background-color: #29335cff;
-    color: antiquewhite;
+    background-color:var(--btnPopup);
+    color: var(--white);
     border: none;
-    border: 2px solid rgb(124, 137, 185) ;
+    border: 2px solid var(--bordaBtnPopUp) ;
     border-radius: 10px;
     margin: 20px ;
     font-size: 16px;
 }
 
 #btnLogin:hover {
-    background-color: rgb(124, 137, 185) ;
-    border: 2px solid #29335cff ;
+    background-color: var(--bordaBtnPopUp) ;
+    border: 2px solid var(--btnPopup) ;
     cursor: pointer;
 }
 
@@ -67,4 +79,13 @@ label {
 h2{
     font-family: "Title";
     padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover{
+    color: var(--corPrimaria);
 }
