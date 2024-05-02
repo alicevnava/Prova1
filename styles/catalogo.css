@@ -3,17 +3,6 @@
     padding: 0%;
 }
 
-/* fontes */
-@font-face {
-    font-family:Main;
-    src: url(Thasadith/Thasadith-Regular.ttf);
-}
-
-/* títulos */
-@font-face {
-    font-family: Title;
-    src: url(Poller_One/PollerOne-Regular.ttf);
-}
 
 :root{
     --corPrimaria: #cd426a; /*headers, footers */
